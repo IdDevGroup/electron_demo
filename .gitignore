@@ -150,11 +150,6 @@ jspm_packages
 .yarn-integrity
 
 
-.compilerc
-.gitignore
 .idea/
 .vscode/
-demo.js
 node_modules/
-package.json
-src/

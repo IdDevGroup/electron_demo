@@ -1,0 +1,32 @@
+.box {
+  position: relative;
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow-y: auto;
+  height: auto;
+  &--vertical {
+    flex-direction: column;
+    height: inherit;
+  }
+  &--shrink {
+    flex: 0 0 auto;
+  }
+  &--content {
+    width: 100%;
+  }
+  &--alignRight {
+    justify-content: flex-end;
+  }
+  &--alignLeft {
+    justify-content: flex-start;
+  }
+  &--alignCenter {
+    justify-content: center;
+  }
+  &&--alignJustify {
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,59 @@
+html body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    body {
+        height: 100vh;
+    }
+}
+
+#id_header {
+    background-color: black;
+    color: white;
+}
+
+#id_notification {
+    padding: 10px 0;
+}
+
+.error {
+    background-color: #E44424;
+}
+.success { 
+    background-color: #A2AB58;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#id_footer {
+    font-size: 0.75em;
+}
+
+#id_nav {
+    height: 100px;
+}
+
+.nav {
+    .nav-item:first-child {
+        margin-left: 20px;
+    }
+   
+    .nav-item {
+        cursor: pointer;
+        height: 98px;;
+        border: 1px solid #000;
+        margin-right: 20px;
+
+        &:hover {
+            background: #F0F0F0;
+        }
+    }
+
+}
+
+@import "layout.less";
+@import "spinner.less";

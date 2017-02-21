@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDENTIFiD Demo</title>
+    <link rel="stylesheet" type="text/less" href="./less/application.less">
+
+<style>
+
+</style>
+
+</head>
+<body>
+    <div class="box box--vertical">
+        <div id="id_header" class="box box--shrink" style="padding: 10px">
+            <div id="logo" class="box">
+                <img src="./image/logo.png"/>
+            </div>
+            <!--<div class="box box--alignRight">
+                <div class="loader">Loading...</div>
+            </div>-->
+        </div>
+        <div id="id_notification" class="box box--shrink box--alignCenter"></div>
+        <div id="id_body" class="box box--vertical">
+            <div id="id_setup" class="box box--vertical box--alignCenter hidden">
+                <div class="box box--shrink">
+                    <div class="box"></div>
+                <div class="box">
+                        <input id="email" type="email" placeholder="Email Address" style="width: 100%" value="mdeterman@gmail.com" />
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div class="box box--shrink" style="padding: 10px 0 0">
+                    <div class="box"></div>
+                <div class="box">
+                        <input id="serial_number" placeholder="Serial Number" style="width: 100%" disabled="disabled"  />
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div class="box box--shrink" style="padding: 10px 0 0">
+                    <div class="box"></div>
+                    <div class="box box--alignRight">
+                        <button id="btnSetup" type="button" disabled="disabled">Setup</button>
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div id="id_select" class="box box--vertical box--alignCenter ">
+                <div class="box">
+                    <div class="box"></div>
+                    <div class="box box--vertical">
+                        <div class="box box--shrink" style="width: 100%">
+                            <select id="country">
+                                <option disabled="disabled">Select Country</option>
+                                <option selected disabled="disabled" value="US">United States</option>
+                            </select>
+                        </div>
+                        <div class="box box--shrink">
+                            <select id="idType">
+                                <option selected disabled="disabled">ID Type</option>
+                                <option value="PASSPORT">Passport</option>
+                                <option value="PASSPORT_CARD">Passport Card</option>
+                                <option value="OPERATOR_LICENSE">Operator License</option>
+                                <option value="IDENTIFICATION_CARD">Identification Card</option>
+                            </select>
+                        </div>
+                        <div class="box box--shrink">
+                            <input id="input_id"/>
+                        </div>
+                        <div class="box box--shrink">
+                            <button id="bnt_verify">Verify</button>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div id="id_nav" class="box box--shrink nav">
+                    <div id="bntIdentityCheck" class="box box--vertical box--alignCenter nav-item">
+                        <div class="box box--alignCenter box--shrink">
+                            Identity - Mark - PASSPORT_CARD
+                        </div>
+                    </div>
+                    <div id="bntIdentityCheck2" class="box box--vertical box--alignCenter nav-item">
+                        <div class="box box--alignCenter box--shrink">
+                            Identity - Mark - PASSPORT
+                        </div>
+                    </div>
+                    <!--<div class="box box--vertical box--alignCenter nav-item">
+                        <div class="box box--alignCenter box--shrink">
+                            Identity & Fraud Check
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div id="id_footer" class="box box--shrink box--alignCenter">
+             © 2017 IDENTIFiD inc. All rights reserved
+        </div>
+    </div>
+</body>
+</html>
+<script src="bootstrap.js"></script>
