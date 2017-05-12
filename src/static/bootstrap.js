@@ -21,10 +21,23 @@ let $notify = window.jQuery('#id_notification');
 let jwtString;
 let jwtObject;
 
+$bodySelect.find('#bnt_clear').click(e => {
+    $bodySelect.find('#idType').val($bodySelect.find("#idType option:first").val()).change();
+    $bodySelect.find('#input_id').val('');
+}); 
+
 $bodySelect.find('#bnt_verify').click(e => {
     let type = $bodySelect.find('#idType :selected').val();
     let value = $bodySelect.find('#input_id').val();
     debugger;
+
+    if(type == 'ID Type') {
+        return;
+    }
+
+    if(value == '') {
+        return;
+    }
 
     proxy.startScan({
         type: type,
