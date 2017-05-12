@@ -29,7 +29,6 @@ $bodySelect.find('#bnt_clear').click(e => {
 $bodySelect.find('#bnt_verify').click(e => {
     let type = $bodySelect.find('#idType :selected').val();
     let value = $bodySelect.find('#input_id').val();
-    debugger;
 
     if(type == 'ID Type') {
         return;
@@ -97,7 +96,7 @@ window.document.addEventListener('camera.connection.success', e => {
 });
 
 window.document.addEventListener('camera.scan.success', e => {
-    
+    alert(e.detail.status)
     console.log(e.detail)
 });
 
